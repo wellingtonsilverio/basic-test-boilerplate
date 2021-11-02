@@ -353,7 +353,16 @@ body {
         }
     
         .Content {
+            display: flex;
+
+            width: 800px;
+
+            margin: auto;
+            margin-top: 16px;
+
             .section {
+                padding-bottom: 16px;
+
                 p {
                 }
                 select {
@@ -361,9 +370,14 @@ body {
                 #section-icon {
                 }
             }
+
+            div+div {
+                margin-left: 60px;
+            }
         }
     
         .No-Result {
+            display: block;
             h1 {
             }
     
@@ -375,6 +389,7 @@ body {
         }
     
         .Result {
+            display: none;
             &__Introduction {
                 #pick {
                 }

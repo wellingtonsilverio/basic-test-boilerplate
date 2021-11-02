@@ -13,16 +13,18 @@
 
   <body>
     <div class="Header">
-      <img id="logo" src="images/icons/logo-white.svg" alt="green thumb">
-      <h1>Find your next green friend</h1>
-      <img id="arrow-down" src="images/icons/arrow-down.svg" alt="Arrow down">
+      <div class="Header__Introduction">
+        <img id="logo" src="images/icons/logo-white.svg" alt="green thumb">
+        <h1>Find your next green friend</h1>
+        <img id="arrow-down" src="images/icons/arrow-down.svg" alt="Arrow down">
+      </div>
 
       <img id="mobile-plantperson" src="images/hero/mobile/mobile-plantperson.png" alt="Plant person">
     </div>
 
     <div class="Content">
-      <div class="sun">
-        <img id="sun-image" src="images/illustrations/sun.png" alt="Sun">
+      <div class="section">
+        <img id="section-icon" src="images/illustrations/sun.png" alt="Sun">
         <p>
           <strong>1.</strong> Set the amount of <strong>sunlight</strong> your plant will get.
         </p>
@@ -30,8 +32,32 @@
           <option value="" disabled selected>Select...</option>
         </select>
       </div>
-      <div></div>
-      <div></div>
+
+      <div class="section">
+        <img id="section-icon" src="images/illustrations/wateringcan.png" alt="Water">
+        <p>
+          <strong>2.</strong> How often do you want to <strong>water</strong> your plant?
+        </p>
+        <select name="sunlight" id="select-wateringcan">
+          <option value="" disabled selected>Select...</option>
+        </select>
+      </div>
+
+      <div class="section">
+        <img id="section-icon" src="images/illustrations/dog.png" alt="Pets">
+        <p>
+          <strong>3.</strong> Do you have pets? Do they <strong>chew</strong> plants? 
+        </p>
+        <select name="sunlight" id="select-pets">
+          <option value="" disabled selected>Select...</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="Result">
+      <h1>No results yet…</h1>
+      <p>Use the filters above to find the plant that best fits your environment :)</p>
+      <img src="images/illustrations/no-results.png" alt="No Results">
     </div>
 
   </body>

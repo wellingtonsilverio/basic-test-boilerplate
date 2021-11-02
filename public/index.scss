@@ -46,45 +46,100 @@ body {
         padding: 32px;
 
         background-color: #75BC97;
+
+        &__Introduction {
+            position: relative;
+            
+            z-index: 99;
+
+            #logo {
+                width: 160px;
+            }
+            h1 {
+                margin-top: 36px;
+                
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 49px;
+                color: #FFFFFF;
+            }
+            #arrow-down {
+                height: 39px;
+    
+                margin-bottom: 48px;
+            }
+        }
+        
+        #mobile-plantperson {
+            width: 100%;
+        }
+    }
+    .Header::before {
+        content: '';
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
         background-image: url("images/hero/mobile/mobile-leaves.png");
         background-size: 100% auto;
         background-repeat: no-repeat;
 
-        #logo {
-            width: 160px;
-        }
-        h1 {
-            margin-top: 36px;
-            
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 49px;
-            color: #FFFFFF;
-        }
-        #arrow-down {
-            height: 39px;
-
-            margin-bottom: 48px;
-        }
-        #mobile-plantperson {
-            width: 100%;
-        }
+        z-index: 2;
     }
 
     .Content {
         padding: 18px 38px 32px 38px;
 
-        .sun {
+        .section {
+            padding-bottom: 50px;
+
             p {
                 margin-top: 4px;
                 margin-bottom: 16px;
             }
             select {
-                margin-top: 4px;
+                margin-top: 8px;
             }
-            #sun-image {
-                width: 75px;
+            #section-icon {
+                height: 75px;
+
+                margin-bottom: 4px;
             }
+        }
+    }
+
+    .Result {
+        padding: 36px;
+
+        background-color: #F2F2F2;
+
+        text-align: center;
+
+        h1 {
+            margin-top: 16px;
+            margin-bottom: 0;
+
+            text-align: left;
+            font-weight: bold;
+            font-size: 45px;
+            line-height: 55px;
+
+            color: #A9A9A9;
+        }
+
+        p {
+            text-align: left;
+            font-size: 16px;
+            line-height: 27px;
+
+            color: #A9A9A9;
+        }
+
+        img {
+            margin-top: 16px;
         }
     }
 }

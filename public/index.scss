@@ -49,7 +49,7 @@ body {
 
         &__Introduction {
             position: relative;
-            
+
             z-index: 99;
 
             #logo {
@@ -111,7 +111,9 @@ body {
         }
     }
 
-    .Result {
+    .No-Result {
+        display: none;
+        
         padding: 36px;
 
         background-color: #F2F2F2;
@@ -140,6 +142,142 @@ body {
 
         img {
             margin-top: 16px;
+        }
+    }
+
+    .Result {
+        background-color: #F2F2F2;
+
+        &__Introduction {
+            padding: 36px 36px 0 36px;
+
+            #pick {
+                height: 72px;
+            }
+    
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 49px;
+    
+                color: #0C261C;
+            }
+        }
+
+        &__Plants {
+            display: flex;
+
+            padding: 32px 16px;
+            margin-bottom: 24px;
+
+            overflow-x: auto;
+
+            &__Content {
+                display: flex;
+                flex-direction: column;
+                
+                padding: 24px 22px 22px 22px;
+
+                border-radius: 5px;
+                
+                background: #FFFFFF;
+
+                box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.0925754);
+
+                img {
+                    height: 220px;
+
+                    margin-top: 8px;
+                }
+
+                h3 {
+                    margin: 4px 0 2px 0;
+
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 28px;
+
+                    color: #1E6B4E;
+                }
+
+                &__Label {
+                    width: 140px;
+
+                    margin-left: -22px;
+
+                    padding: 8px 16px;
+
+                    border-top-right-radius: 25px;
+                    border-bottom-right-radius: 25px;
+
+                    font-weight: bold;
+                    color: #FFFFFF;
+
+                    background: #75BC97;
+
+                    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.181163);
+
+                    z-index: 9;
+                }
+
+                &__Details {
+                    display: flex;
+                    justify-content: space-between;
+
+                    &__Price {
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 28px;
+
+                        color: #257556;
+                    }
+                    &__Categories {
+                        display: flex;
+
+                        img {
+                            height: 16px;
+                        }
+
+                        img+img {
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+
+            div+div {
+                margin-left: 16px;
+            }
+        }
+
+        &__Buttons {
+            padding: 0 36px;
+            padding-bottom: 32px;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                width: 100%;
+                height: 50px;
+    
+                border: 1px solid #15573F;
+                box-sizing: border-box;
+                border-radius: 25px;
+    
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+    
+                color: #196146;
+    
+                cursor: pointer;
+    
+                img {
+                    margin-right: 16px;
+                }
+            }
         }
     }
 }

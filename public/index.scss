@@ -9,6 +9,9 @@ body {
         padding: 32px;
 
         background-color: #75BC97;
+        background-image: url("images/hero/mobile/mobile-leaves.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
 
         #logo {
             width: 160px;
@@ -25,6 +28,9 @@ body {
             height: 39px;
 
             margin-bottom: 48px;
+        }
+        #mobile-plantperson {
+            width: 100%;
         }
     }
 }

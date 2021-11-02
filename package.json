@@ -4,11 +4,11 @@
   "description": "Simple Parcel Sandbox",
   "main": "public/index.html",
   "scripts": {
-    "start": "parcel public/index.html",
-    "build": "parcel build public/index.html"
+    "start": "parcel serve public/index.html --open --dist-dir build",
+    "build": "parcel build public/index.html --dist-dir build"
   },
   "dependencies": {
-    "parcel": "1.12.4"
+    "parcel": "^1.12.4"
   },
   "devDependencies": {
     "parcel-bundler": "^1.6.1",

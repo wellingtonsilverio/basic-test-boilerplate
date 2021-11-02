@@ -4,8 +4,8 @@
   "description": "Simple Parcel Sandbox",
   "main": "public/index.html",
   "scripts": {
-    "start": "parcel serve public/index.html --open --dist-dir build",
-    "build": "parcel build public/index.html --dist-dir build"
+    "start": "parcel serve public/index.html --port 1234",
+    "build": "parcel build public/index.html"
   },
   "dependencies": {
     "parcel": "^1.12.4"

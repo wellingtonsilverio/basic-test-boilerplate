@@ -5,6 +5,10 @@ body {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
 
+    * {
+        box-sizing: border-box;
+    }
+
     p {
         font-size: 14px;
         line-height: 22px;
@@ -72,6 +76,9 @@ body {
         
         #mobile-plantperson {
             width: 100%;
+        }
+        #desktop-plantperson {
+            display: none;
         }
     }
     .Header::before {
@@ -201,7 +208,7 @@ body {
                 }
 
                 &__Label {
-                    width: 140px;
+                    width: 170px;
 
                     margin-left: -22px;
 
@@ -276,6 +283,138 @@ body {
     
                 img {
                     margin-right: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        p {
+        }
+    
+        select {
+        }
+    
+        .Header {
+            max-height: 500px;
+            
+            display: flex;
+            justify-content: center;
+            
+            &__Introduction {
+                width: 400px;
+
+                margin: 0 48px;
+
+                #logo {
+                }
+                h1 {
+                    font-size: 70px;
+                    line-height: 85px;
+                }
+                #arrow-down {
+                }
+            }
+            
+            #mobile-plantperson {
+                display: none;
+            }
+            #desktop-plantperson {
+                display: block;
+
+                height: 428px;
+
+
+            }
+        }
+        .Header::before {
+            background-image: url("images/hero/desktop/left-leaves.png");
+            background-size: auto 500px;
+            background-position: top left;
+        }
+        .Header::after {
+            content: '';
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+
+            background-image: url("images/hero/desktop/right-leaves.png");
+            background-size: auto 500px;
+            background-repeat: no-repeat;
+            background-position: top right;
+
+            z-index: 2;
+            
+        }
+    
+        .Content {
+            .section {
+                p {
+                }
+                select {
+                }
+                #section-icon {
+                }
+            }
+        }
+    
+        .No-Result {
+            h1 {
+            }
+    
+            p {
+            }
+    
+            img {
+            }
+        }
+    
+        .Result {
+            &__Introduction {
+                #pick {
+                }
+        
+                h1 {
+                }
+            }
+    
+            &__Plants {
+                &__Content {
+                    img {
+                    }
+    
+                    h3 {
+                    }
+    
+                    &__Label {
+                    }
+    
+                    &__Details {
+                        &__Price {
+                        }
+                        &__Categories {
+                            img {
+                            }
+    
+                            img+img {
+                            }
+                        }
+                    }
+                }
+    
+                div+div {
+                }
+            }
+    
+            &__Buttons {
+                button {
+                    img {
+                    }
                 }
             }
         }

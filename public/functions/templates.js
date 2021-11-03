@@ -11,8 +11,8 @@ module.exports = {
   generatePlant: (staffFavorite, name, sun, water, toxicity, imageUrl, price) => `
     <div ${staffFavorite ? 'id="highlight"' : ''} class="Result__Plants__Content">
       ${staffFavorite ? `<div class="Result__Plants__Content__Label">
-      ✨ Staff favorite
-    </div>` : ''}
+        ✨ Staff favorite
+      </div>` : ''}
       <img src="${imageUrl}" alt="${name}">
       <div class="Result__Plants__Content__Details">
       <h3>${name}</h3>

@@ -202,12 +202,15 @@ body {
                     height: 220px;
 
                     margin-top: 8px;
+
+                    object-fit: contain;
                 }
 
                 &__Label {
                     width: 170px;
 
                     margin-left: -22px;
+                    margin-right: 64px;
 
                     padding: 8px 16px;
 
@@ -250,11 +253,11 @@ body {
                             display: flex;
                             align-items: center;
 
-                            img {
+                            > img {
                                 height: 16px;
                             }
 
-                            img+img {
+                            > img+img {
                                 margin-left: 6px;
                             }
                         }
@@ -297,12 +300,6 @@ body {
 
 @media screen and (min-width: 1440px) {
     body {
-        p {
-        }
-    
-        select {
-        }
-    
         .Header {
             max-height: 500px;
             
@@ -314,13 +311,9 @@ body {
 
                 margin: 0 48px 0 0;
 
-                #logo {
-                }
                 h1 {
                     font-size: 70px;
                     line-height: 85px;
-                }
-                #arrow-down {
                 }
             }
             
@@ -368,13 +361,6 @@ body {
 
             .section {
                 padding-bottom: 16px;
-
-                p {
-                }
-                select {
-                }
-                #section-icon {
-                }
             }
 
             div+div {
@@ -394,12 +380,6 @@ body {
                 margin: auto;
                 padding-left: 16px;
                 padding-right: 16px;
-
-                h1 {
-                }
-        
-                p {
-                }
         
                 img {
                     margin: auto;
@@ -450,6 +430,12 @@ body {
                     padding-bottom: 16px;
                     margin-bottom: 0;
 
+                    h3 {
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 28px;
+                    }
+
                     > img {
                         margin: 0;
                         height: 120px;
@@ -457,23 +443,8 @@ body {
                         margin-top: 0;
                     }
     
-                    h3 {
-                    }
-    
                     &__Label {
                         display: none;
-                    }
-    
-                    &__Details {
-                        &__Price {
-                        }
-                        &__Categories {
-                            img {
-                            }
-    
-                            img+img {
-                            }
-                        }
                     }
                 }
 
@@ -528,19 +499,11 @@ body {
                         }
                     }
                 }
-    
-                div+div {
-                }
             }
     
             &__Buttons {
                 padding: 0 16px;
                 padding-bottom: 64px;
-
-                button {
-                    img {
-                    }
-                }
             }
         }
     }

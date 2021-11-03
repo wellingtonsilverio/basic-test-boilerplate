@@ -20,11 +20,33 @@ module.exports = {
           <span class="Result__Plants__Content__Details__Info__Price">$${price}</span>
           <span class="Result__Plants__Content__Details__Info__Categories">
           <img src="${toxicity ? ToxicDropImage : PetDropImage}" alt="${toxicity ? "Toxic" : "Pet Friend"}">
-          <img src="${sun === "high" ? HighSunImage : sun === "low" ? LowSunImage : NoSunImage }" alt="${sun === "high" ? "High sun" : sun === "low" ? "Low sun" : "No sun" }">
-          <img src="${water === "rarely" ? TreeDropImage : water === "daily" ? TwoDropImage : OneDropImage}" alt="${water === "rarely" ? "Rarely drop" : water === "daily" ? "Daily drop" : "Rarely drop"}">
+          <img src="${getSunImage()}" alt="${getSunLabel()}">
+          <img src="${getDropsImage()}" alt="${getDropsLabel()}">
           </span>
         </div>
       </div>
     </div>
   `
+}
+
+const getDropsImage = (water) => {
+  if (water === "rarely") return OneDropImage
+  if (water === "daily") return TwoDropImage
+  return TreeDropImage
+}
+const getSunImage = (water) => {
+  if (water === "high") return HighSunImage
+  if (water === "low") return LowSunImage
+  return NoSunImage
+}
+
+const getDropsLabel = (water) => {
+  if (water === "rarely") return "Rarely drop"
+  if (water === "daily") return "Daily drop"
+  return "Regularly drop"
+}
+const getSunLabel = (water) => {
+  if (water === "high") return "High sun"
+  if (water === "low") return "Low sun"
+  return "No sun"
 }

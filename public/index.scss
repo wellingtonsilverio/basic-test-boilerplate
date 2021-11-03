@@ -90,9 +90,12 @@ body {
         right: 0;
         bottom: 0;
 
+        height: 360px;
+
         background-image: url("images/hero/mobile/mobile-leaves.png");
         background-size: 100% auto;
         background-repeat: no-repeat;
+        background-position: bottom center;
 
         z-index: 2;
     }
@@ -185,6 +188,7 @@ body {
             overflow-x: auto;
 
             &__Content {
+                width: 260px;
                 display: flex;
                 flex-direction: column;
                 
@@ -330,6 +334,8 @@ body {
             background-image: url("images/hero/desktop/left-leaves.png");
             background-size: auto 500px;
             background-position: top left;
+
+            height: 500px;
         }
         .Header::after {
             content: '';
@@ -346,6 +352,8 @@ body {
             background-position: top right;
 
             z-index: 2;
+
+            height: 500px;
             
         }
     
@@ -425,6 +433,7 @@ body {
                 padding-top: 16px;
 
                 &__Content {
+                    width: auto;
                     margin: 0;
                     padding-top: 16px;
                     padding-bottom: 16px;
@@ -503,6 +512,7 @@ body {
     
             &__Buttons {
                 padding: 0 16px;
+                padding-top: 16px;
                 padding-bottom: 64px;
             }
         }
